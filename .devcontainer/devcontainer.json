@@ -1,8 +1,7 @@
 {
   "image": "mcr.microsoft.com/devcontainers/python:3.12",
   "hostRequirements": {
-    "cpus": 64,
-    "memory": "32gb"
+    "cpus": 16
   },
   "waitFor": "onCreateCommand",
   "updateContentCommand": "pip install --upgrade pip && pip install -r requirements.txt",
