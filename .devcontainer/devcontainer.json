@@ -1,7 +1,8 @@
 {
   "image": "mcr.microsoft.com/devcontainers/python:3.12",
   "hostRequirements": {
-    "cpus": "max"
+    "cpus": 64,
+    "memory": "32gb"
   },
   "waitFor": "onCreateCommand",
   "updateContentCommand": "pip install --upgrade pip && pip install -r requirements.txt",
@@ -15,7 +16,8 @@
         "ms-toolsai.jupyter",
         "ms-python.python",
         "ms-python.pylint",
-        "mongodb.mongodb-vscode"
+        "GitHub.copilot",
+        "GitHub.copilot-chat"
       ]
     }
   }
